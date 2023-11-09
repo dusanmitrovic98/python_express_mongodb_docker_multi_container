@@ -14,17 +14,14 @@ services:
       context: ./app
     links:
       - todo-database
-    environment:
-      NODE_ENV: production
+    volumes: 
+     - ./app:/usr/src/app
+     - /usr/src/app/node_modules
     ports:
-      - 3000:3000
+      - 3001:3001
 
   todo-database:
     image: mongo:6
-    #volumes: 
-    #  - database:/data/db
+    command: mongod --port 27018
     ports:
-      - 27017:27017
-
-#volumes:
-  #database:
+      - 27018:27018

@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js -e js,ejs,mjs,cjs,json -L"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "moment": "^2.29.4",
-    "mongoose": "^7.1.0"
+    "mongoose": "^7.1.0",
+    "nodemon": "^3.0.1"
   }
 }
