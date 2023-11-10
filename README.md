@@ -1,4 +1,4 @@
-# `python_flask_mongodb_docker_multi_container` template
+# `python_express_mongodb_docker_multi_container` template
 
 ## Run the application
 
